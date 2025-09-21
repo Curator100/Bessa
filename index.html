@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>let's see a betch</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #f9f9f9;
+      }
+      h1 {
+        margin: 20px 0 10px;
+        font-size: 2rem;
+        color: #333;
+      }
+      model-viewer {
+        width: 100%;
+        max-width: 600px;
+        height: 500px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      }
+      .price {
+        margin-top: 15px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ff3366;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>let's see a betch</h1>
+    <model-viewer 
+      src="1.glb"
+      alt="3D Model"
+      auto-rotate
+      camera-controls
+      ar
+      shadow-intensity="1">
+    </model-viewer>
+    <div class="price">$69</div>
+  </body>
+</html>
